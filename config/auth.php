@@ -38,8 +38,8 @@ return [
     'guards' => [
         'web' => [
             'driver' => 'session',
-            'provider' => 'users',
-        ],
+            'provider' => 'users'
+        ], 
     ],
 
     /*
@@ -60,9 +60,22 @@ return [
     */
 
     'providers' => [
+        'penggunas' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\pengguna::class,
+            'table' => 'penggunas',
+        ],
+        'pengguna_dosens' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\pengguna_dosen::class,
+        ],
+        'staffs' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\staff::class,
+        ],
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => App\Models\user::class,
         ],
 
         // 'users' => [
@@ -91,12 +104,13 @@ return [
     */
 
     'passwords' => [
-        'users' => [
-            'provider' => 'users',
-            'table' => 'password_reset_tokens',
-            'expire' => 60,
-            'throttle' => 60,
-        ],
+        // 'users' => [
+        //     'provider' => 'users',
+        //     'table' => 'password_reset_tokens',
+        //     'expire' => 60,
+        //     'throttle' => 60,
+        // ],
+       
     ],
 
     /*
