@@ -18,6 +18,10 @@ return new class extends Migration
             $table->string('Password');
             $table->string('email');
         });
+        Schema::table('penggunas', function (Blueprint $table) {
+            //
+            $table->string('Password', 100)->change();
+        });
     }
 
     /**
@@ -26,5 +30,10 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('penggunas');
+        Schema::table('penggunas', function (Blueprint $table) {
+            //
+            $table->string('Password', 60)->change();
+        });
     }
+
 };
