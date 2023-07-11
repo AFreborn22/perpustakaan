@@ -1,0 +1,228 @@
+@media (max-width: 600px) {
+    .container {
+      max-width: 100%;
+      margin-top: 50px;
+    }
+  }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5b017e;
+    background-image:url("../img/bg-perpus.svg");
+    background-size: cover;
+  }
+
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #d9d9d979;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 25px;
+    margin-top: 200px;
+  }
+
+.container2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  width: 300px; /* Sesuaikan dengan lebar logo */
+  height: 200px; /* Sesuaikan dengan tinggi logo */
+}
+ 
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+  .form-group .icon-left,
+  .form-group .icon-right {
+    position: absolute;
+    opacity: 80%;
+    top: 50%;
+    transform: translateY(-45%);
+  }
+
+
+  .form-group .icon-left {
+    left: 2px;
+  }
+
+
+  .form-group .icon-right {
+    right: 15px;
+    
+  }
+
+  .link{
+    position:absolute;
+    transform: translate(15%, -70%);
+  }
+
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 25px;
+    
+  }
+
+  input[type="email"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 25px;
+  }
+
+  .show-password {
+    position: relative;
+  }
+
+  .show-password input[type="password"] {
+    padding-right: 30px;
+  }
+
+  .show-password .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .login {
+    width: 100%;
+    background-color: #6708AE;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .login:hover {
+    background-color: #430574;
+  }
+
+  .signup {
+    width: 100%;
+    background-color: #E58A14;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .signup:hover {
+    background-color: #a96308;
+  }
+
+  select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 25px;
+  }
+  
+  select:focus {
+    outline: none; /* Menghapus outline saat dipilih */
+    border-color: #810cd4; /* Mengubah warna border saat dipilih */
+  }
+
+  option {
+    background-color: #fff;
+    color: #333;
+  }
+
+  option:hover {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .warna{
+    color: rgb(235, 235, 235);
+  }
+
+  .warna:hover{
+    color: rgb(255, 2, 2);
+  }
+
+  .alert-danger {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 300px;
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    text-align: center;
+    z-index: 9999;
+}
+
+.alert-danger2 {
+  position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 1%);
+    width: 300px;
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    text-align: center;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alert-danger button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #7c078e;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.error-message {
+  margin-bottom: 10px;
+}
+
+.alert-danger2 button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #7c078e;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
